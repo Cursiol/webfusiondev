@@ -75,8 +75,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Intersection Observer for animations
 const observerOptions = {
-    threshold: 0.3,
-    rootMargin: '0px 0px -100px 0px'
+    threshold: 0.08,
+    rootMargin: '0px 0px 0px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -102,7 +102,7 @@ const sections = document.querySelectorAll('.section');
 sections.forEach(section => {
     section.style.opacity = '0';
     section.style.transform = 'translateY(30px)';
-    section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+    section.style.transition = 'opacity 0.45s ease, transform 0.45s ease';
     observer.observe(section);
 });
 
@@ -111,7 +111,7 @@ const skillCards = document.querySelectorAll('.skill-card');
 skillCards.forEach((card, index) => {
     card.style.opacity = '0';
     card.style.transform = 'translateY(30px)';
-    card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+    card.style.transition = `opacity 0.4s ease ${index * 0.05}s, transform 0.4s ease ${index * 0.05}s`;
     observer.observe(card);
 });
 
@@ -120,7 +120,7 @@ const valueCards = document.querySelectorAll('.value-card');
 valueCards.forEach((card, index) => {
     card.style.opacity = '0';
     card.style.transform = 'translateY(30px)';
-    card.style.transition = `opacity 0.6s ease ${index * 0.1 + 0.2}s, transform 0.6s ease ${index * 0.1 + 0.2}s`;
+    card.style.transition = `opacity 0.4s ease ${index * 0.05 + 0.05}s, transform 0.4s ease ${index * 0.05 + 0.05}s`;
     observer.observe(card);
 });
 
