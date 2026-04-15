@@ -958,8 +958,13 @@ h3 {
 }
 
 .info-icon {
-    padding: 0.75rem;
-    background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(255, 157, 0, 0.05));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, rgba(0, 112, 255, 0.1), rgba(255, 138, 0, 0.05));
     border-radius: var(--radius-md);
     color: var(--neon-blue);
     transition: all 0.3s ease;
