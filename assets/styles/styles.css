@@ -12,8 +12,9 @@
     --bg-tertiary: #1e293b;
     --text-primary: #e8eaed;
     --text-muted: #94a3b8;
-    --neon-blue: #00d9ff;
-    --neon-orange: #ff9d00;
+    --neon-blue: #0070ff;
+    --neon-orange: #ff8a00;
+    --neon-yellow: #ffcc00;
     --neon-green: #00ff9d;
     --purple-accent: #6b5ce7;
     --border-color: rgba(255, 255, 255, 0.1);
@@ -109,13 +110,13 @@ h3 {
 .btn-primary {
     background: linear-gradient(135deg, var(--neon-blue), var(--neon-orange));
     color: #ffffff;
-    box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
     font-weight: 600;
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, #00c4e6, #ff8800);
-    box-shadow: 0 0 30px rgba(0, 217, 255, 0.5), 0 0 30px rgba(255, 157, 0, 0.3);
+    background: linear-gradient(135deg, #005bc5, #ff6a00);
+    box-shadow: 0 0 30px rgba(0, 112, 255, 0.4), 0 0 30px rgba(255, 138, 0, 0.3);
     transform: translateY(-2px);
 }
 
