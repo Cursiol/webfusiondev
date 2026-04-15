@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WebFusion - Portfólio de desenvolvedor front-end especializado em HTML, CSS e JavaScript. Criando experiências web modernas e eficientes.">
+    <meta name="keywords" content="desenvolvedor front-end, HTML, CSS, JavaScript, web design, portfólio, WebFusion">
+    <meta name="author" content="WebFusion">
+    <title>WebFusionDEV</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/img/Webfusion.png" alt="WebFusion" class="logo-image">
+            </a>
+
+            <div class="nav-links">
+                <a href="#hero" class="nav-link">Início</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#portfolio" class="nav-link">Portfólio</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </div>
+
+            <button class="btn btn-primary nav-cta">Fale Comigo</button>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <a href="#hero" class="mobile-link">Início</a>
+            <a href="#about" class="mobile-link">Sobre</a>
+            <a href="#portfolio" class="mobile-link">Portfólio</a>
+            <a href="#contact" class="mobile-link">Contato</a>
+            <button class="btn btn-primary w-full">Fale Comigo</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="bg-gradient gradient-1"></div>
+        <div class="bg-gradient gradient-2"></div>
+        <div class="hero-logo-watermark">
+            <img src="assets/img/ChatGPT_Image_14_de_abr._de_2026,_07_32_35-1.png" alt="WebFusion">
+        </div>
+
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        <span>WebFusion - Desenvolvedor Front-end</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Criando experiências
+                        <span class="text-gradient">digitais</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Desenvolvedor especializado em criar websites modernos e eficientes
+                        utilizando HTML, CSS e JavaScript.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('portfolio')">Ver Projetos</button>
+                        <button class="btn btn-outline" onclick="scrollToSection('contact')">Entrar em Contato</button>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-dot red"></div>
+                            <div class="window-dot yellow"></div>
+                            <div class="window-dot green"></div>
+                        </div>
+                        <pre class="code-content"><code><span class="code-purple">const</span> <span class="code-blue">developer</span> = <span class="code-yellow">{</span>
+  <span class="code-green">name</span>: <span class="code-orange">'Front-end'</span>,
+  <span class="code-green">skills</span>: [
+    <span class="code-orange">'HTML'</span>,
+    <span class="code-orange">'CSS'</span>,
+    <span class="code-orange">'JavaScript'</span>
+  ],
+  <span class="code-green">passion</span>: <span class="code-orange">'Criar experiências únicas'</span>
+<span class="code-yellow">}</span></code></pre>
+                        <div class="code-glow glow-1"></div>
+                        <div class="code-glow glow-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-label">Sobre Mim</span>
+                    <h2 class="section-title">
+                        Desenvolvedor apaixonado por <span class="text-neon">tecnologia</span>
+                    </h2>
+                    <p class="text-muted">
+                        Olá, me chamo Lucas, desenvolvedor front-end com foco na criação de experiências web
+                        modernas, acessíveis e de alta performance. Minha jornada no desenvolvimento começou a partir da
+                        curiosidade em entender como os sites funcionam e como a tecnologia pode transformar a
+                        experiência do usuário.
+                    </p>
+                    <p class="text-muted">
+                        Sou formado em Ciência da Computação e direciono meu trabalho para a construção de interfaces
+                        intuitivas, funcionais e centradas no usuário, sempre priorizando usabilidade, performance e
+                        boas práticas de desenvolvimento.
+                    </p>
+                    <p class="text-muted">
+                        Hoje, transformo ideias em realidade digital, buscando constantemente as melhores práticas e as
+                        tecnologias mais atuais do mercado para entregar soluções de qualidade, escaláveis e alinhadas
+                        às necessidades do usuário e do negócio.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>HTML & CSS</h3>
+                            <p class="text-muted">Código semântico e estilização moderna com foco em performance</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Design Responsivo</h3>
+                            <p class="text-muted">Interfaces adaptáveis para todos os dispositivos e telas</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p class="text-muted">Interatividade e funcionalidades dinâmicas com código limpo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Section -->
+    <section class="professional-section section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Experiência Profissional</span>
+                <h2 class="section-title">
+                    Competências e <span class="text-neon">Diferenciais</span>
+                </h2>
+                <p class="text-muted">Habilidades técnicas e valores que guiam meu trabalho</p>
+            </div>
+
+            <div class="competencies-card">
+                <h3 class="card-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                    Principais Competências
+                </h3>
+                <div class="progress-bars">
+                    <div class="progress-item">
+                        <div class="progress-header">
+                            <span>Atenção aos detalhes</span>
+                            <span class="text-neon">95%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="95"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <div class="progress-header">
+                            <span>Performance</span>
+                            <span class="text-neon">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <div class="progress-header">
+                            <span>Design Responsivo</span>
+                            <span class="text-neon">89%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="89"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <div class="progress-header">
+                            <span>Acessibilidade</span>
+                            <span class="text-neon">85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="85"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                    </div>
+                    <h3>Missão</h3>
+                    <p class="text-muted">
+                        Entregar soluções web modernas e eficientes que superem as expectativas dos clientes e usuários
+                        finais.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3>Visão</h3>
+                    <p class="text-muted">
+                        Crescer constantemente como desenvolvedor e criar projetos que causem impacto positivo na vida
+                        das pessoas.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3>Valores</h3>
+                    <p class="text-muted">
+                        Qualidade, compromisso, inovação e clareza em cada linha de código e em cada projeto
+                        desenvolvido.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Meu Trabalho</span>
+                <h2 class="section-title">
+                    Projetos em <span class="text-neon">Destaque</span>
+                </h2>
+                <p class="text-muted">Alguns dos projetos que desenvolvi utilizando HTML, CSS e JavaScript</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1575388902449-6bca946ad549?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWJzaXRlJTIwZGFzaGJvYXJkJTIwaW50ZXJmYWNlfGVufDF8fHx8MTc3Mzc4ODYyOXww&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="Dashboard Analytics">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Dashboard Analytics</h3>
+                        <p class="text-muted">Painel de controle moderno com visualização de dados em tempo real e
+                            gráficos interativos.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn btn-outline btn-sm">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                Em andamento
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1758613654757-7c4f113a6782?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb3J0Zm9saW8lMjBkZXNpZ24lMjBsYXB0b3B8ZW58MXx8fHwxNzczNzg4NjI5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="Portfolio Criativo">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Criativo</h3>
+                        <p class="text-muted">Site de portfólio minimalista com animações suaves e design responsivo
+                            para todos os dispositivos.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn btn-outline btn-sm">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                Em andamento
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1707836916010-3c4ad261936c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ24lMjBzY3JlZW58ZW58MXx8fHwxNzczNzcyMzM1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="App Mobile Interface">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>App Mobile Interface</h3>
+                        <p class="text-muted">Interface mobile-first com navegação intuitiva e experiência de usuário
+                            otimizada.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn btn-outline btn-sm">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                Em andamento
+                            </button>
+                            <!-- <button class="btn btn-outline btn-sm">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                Ver Código
+                            </button> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1566915896913-549d796d2166?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RpbmclMjB3b3Jrc3BhY2UlMjBkZXZlbG9wZXJ8ZW58MXx8fHwxNzczNjcyNjg4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="Landing Page Moderna">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Landing Page Moderna</h3>
+                        <p class="text-muted">Página de conversão com design atraente, otimizada para performance e SEO.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn btn-outline btn-sm">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                Em andamento
+                            </button>
+                            <!-- <button class="btn btn-outline btn-sm">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                Ver Código
+                            </button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Depoimentos</span>
+                <h2 class="section-title">
+                    O que dizem <span class="text-neon">os clientes</span>
+                </h2>
+                <p class="text-muted">Feedback de clientes satisfeitos com os projetos desenvolvidos</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z">
+                            </path>
+                            <path
+                                d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="rating">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#00d9ff" stroke="#00d9ff"
+                            stroke-width="2">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                            </polygon>
+                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#00d9ff" stroke="#00d9ff"
+                            stroke-width="2">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                            </polygon>
+                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#00d9ff" stroke="#00d9ff"
+                            stroke-width="2">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                            </polygon>
+                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#00d9ff" stroke="#00d9ff"
+                            stroke-width="2">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                            </polygon>
+                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#00d9ff" stroke="#00d9ff"
+                            stroke-width="2">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                            </polygon>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">
+                        "Seja o primeiro"
+                    </p>
+                    <div class="testimonial-avatar"></div>
+                    <h4>Nome</h4>
+                    <p class="text-muted">Empresa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials extras comentados para uso futuro
+    <div class="testimonial-card">...</div>
+    <div class="testimonial-card">...</div>
+    -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Entre em Contato</span>
+                <h2 class="section-title">
+                    Vamos criar algo <span class="text-neon">incrível</span> juntos
+                </h2>
+                <p class="text-muted">Tem um projeto em mente? Estou pronto para transformar suas ideias em
+                    realidade
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome completo</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="6"
+                            placeholder="Conte-me sobre seu projeto..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-full">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                        Enviar Mensagem
+                    </button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p class="text-muted">lucascursiol2303@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p class="text-muted">+55 (17) 99742-9892</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Localização</h4>
+                            <p class="text-muted">São José do Rio Preto, São Paulo, Brasil</p>
+                        </div>
+                    </div>
+
+                    <div class="social-card">
+                        <h3>Redes Sociais</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/Cursiol" class="social-link" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/lucas-ap-cursiol-ba1b411ba/"
+                                class="social-link" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/lucas_cursiol/" class="social-link"
+                                target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <circle cx="17.5" cy="6.5" r="1.5"></circle>
+                                </svg>
+                            </a>
+                            <a href="https://wa.me/5517997429892?text=Olá%2C%20vim%20pelo%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto!" class="social-link" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="availability-card">
+                        <div class="availability-dot"></div>
+                        <div>
+                            <h4>Disponível para projetos</h4>
+                            <p class="text-muted">Aceitando novos projetos freelance. Entre em contato para
+                                discutir sua ideia!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="assets/img/Webfusion.png" alt="WebFusion" class="logo-image">
+                    </div>
+                    <p class="text-muted">
+                        WebFusion - Fusionando criatividade e tecnologia para criar experiências web
+                        modernas, eficientes e impactantes com HTML, CSS e JavaScript.
+                    </p>
+                    <div class="footer-love">
+                        <span>Feito com</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#dc2626" stroke="#dc2626"
+                            stroke-width="2">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                            </path>
+                        </svg>
+                        <span>e código limpo</span>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Navegação</h3>
+                    <ul>
+                        <li><a href="#hero">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Serviços</h3>
+                    <ul>
+                        <li><a href="#">Desenvolvimento Web</a></li>
+                        <li><a href="#">Design Responsivo</a></li>
+                        <li><a href="#">HTML/CSS/JavaScript</a></li>
+                        <li><a href="#">Consultoria</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="text-muted">&copy; <span id="currentYear">2026</span> WebFusion. Todos os direitos
+                    reservados.
+                </p>
+                <div class="footer-bottom-links">
+                    <a href="#" class="text-muted">Política de Privacidade</a>
+                    <a href="#" class="text-muted">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/script/script.js"></script>
+</body>
+
+</html>
