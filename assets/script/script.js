@@ -14,13 +14,13 @@ let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
-    
+
     if (currentScroll > 50) {
         navbar.classList.add('scrolled');
     } else {
         navbar.classList.remove('scrolled');
     }
-    
+
     lastScroll = currentScroll;
 });
 
@@ -31,7 +31,7 @@ const mobileLinks = document.querySelectorAll('.mobile-link');
 
 mobileMenuToggle.addEventListener('click', () => {
     mobileMenu.classList.toggle('active');
-    
+
     // Animate hamburger menu
     const spans = mobileMenuToggle.querySelectorAll('span');
     if (mobileMenu.classList.contains('active')) {
@@ -58,10 +58,10 @@ mobileLinks.forEach(link => {
 
 // Smooth scroll for all navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const href = this.getAttribute('href');
-        
+
         if (href === '#' || href === '#hero') {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         } else {
@@ -84,7 +84,7 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = '1';
             entry.target.style.transform = 'translateY(0)';
-            
+
             // Animate progress bars when visible
             if (entry.target.classList.contains('progress-item')) {
                 const progressFill = entry.target.querySelector('.progress-fill');
@@ -149,36 +149,36 @@ progressItems.forEach(item => {
 });
 
 // Contact Form Handling
-const contactForm = document.getElementById('contactForm');
+// const contactForm = document.getElementById('contactForm');
 
-contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Get form values
-    const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        message: document.getElementById('message').value
-    };
-    
-    // Log to console (in production, this would send to a server)
-    console.log('Form submitted:', formData);
-    
-    // Show success message
-    alert('Mensagem enviada com sucesso! Entrarei em contato em breve. 🚀');
-    
-    // Reset form
-    contactForm.reset();
-});
+// contactForm.addEventListener('submit', function (e) {
+//     e.preventDefault();
+
+//     // Get form values
+//     const formData = {
+//         name: document.getElementById('name').value,
+//         email: document.getElementById('email').value,
+//         message: document.getElementById('message').value
+//     };
+
+//     // Log to console (in production, this would send to a server)
+//     console.log('Form submitted:', formData);
+
+//     // Show success message
+//     alert('Mensagem enviada com sucesso! Entrarei em contato em breve. 🚀');
+
+//     // Reset form
+//     contactForm.reset();
+// });
 
 // Add hover effect to buttons
 const buttons = document.querySelectorAll('.btn');
 buttons.forEach(button => {
-    button.addEventListener('mouseenter', function() {
+    button.addEventListener('mouseenter', function () {
         this.style.transform = 'translateY(-2px)';
     });
-    
-    button.addEventListener('mouseleave', function() {
+
+    button.addEventListener('mouseleave', function () {
         this.style.transform = 'translateY(0)';
     });
 });
@@ -188,7 +188,7 @@ window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const heroContent = document.querySelector('.hero-content');
     const heroVisual = document.querySelector('.hero-visual');
-    
+
     if (heroContent && heroVisual) {
         heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
         heroVisual.style.transform = `translateY(${scrolled * 0.2}px)`;
@@ -201,16 +201,16 @@ const navLinks = document.querySelectorAll('.nav-link');
 window.addEventListener('scroll', () => {
     let current = '';
     const sections = document.querySelectorAll('section[id]');
-    
+
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        
+
         if (window.pageYOffset >= sectionTop - 200) {
             current = section.getAttribute('id');
         }
     });
-    
+
     navLinks.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href') === `#${current}`) {
@@ -223,7 +223,7 @@ window.addEventListener('scroll', () => {
 function typeWriter(element, text, speed = 50) {
     let i = 0;
     element.innerHTML = '';
-    
+
     function type() {
         if (i < text.length) {
             element.innerHTML += text.charAt(i);
@@ -231,7 +231,7 @@ function typeWriter(element, text, speed = 50) {
             setTimeout(type, speed);
         }
     }
-    
+
     type();
 }
 
@@ -246,17 +246,17 @@ function createRipple(event) {
     const circle = document.createElement('span');
     const diameter = Math.max(button.clientWidth, button.clientHeight);
     const radius = diameter / 2;
-    
+
     circle.style.width = circle.style.height = `${diameter}px`;
     circle.style.left = `${event.clientX - button.offsetLeft - radius}px`;
     circle.style.top = `${event.clientY - button.offsetTop - radius}px`;
     circle.classList.add('ripple');
-    
+
     const ripple = button.getElementsByClassName('ripple')[0];
     if (ripple) {
         ripple.remove();
     }
-    
+
     button.appendChild(circle);
 }
 
@@ -301,7 +301,7 @@ if ('IntersectionObserver' in window) {
             }
         });
     });
-    
+
     const images = document.querySelectorAll('img');
     images.forEach(img => imageObserver.observe(img));
 }
@@ -335,14 +335,14 @@ function activateEasterEgg() {
     // Add rainbow colors to all neon elements
     const neonElements = document.querySelectorAll('.text-neon, .logo-icon, .skill-icon, .value-icon');
     let hue = 0;
-    
+
     const interval = setInterval(() => {
         neonElements.forEach(el => {
             el.style.color = `hsl(${hue}, 100%, 60%)`;
         });
         hue = (hue + 1) % 360;
     }, 50);
-    
+
     // Stop after 5 seconds
     setTimeout(() => {
         clearInterval(interval);
@@ -376,7 +376,7 @@ document.getElementById('currentYear').textContent = new Date().getFullYear();
 // Logo click animation
 const logoImages = document.querySelectorAll('.logo-image');
 logoImages.forEach(logo => {
-    logo.addEventListener('click', function(e) {
+    logo.addEventListener('click', function (e) {
         this.style.animation = 'none';
         setTimeout(() => {
             this.style.animation = 'logoSpin 0.8s ease-in-out';
@@ -397,6 +397,34 @@ logoSpinStyle.textContent = `
         100% { transform: rotate(360deg) scale(1); }
     }
 `;
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const statusDiv = document.getElementById("status");
+    const spinner = document.getElementById("status-spinner");
+    const statusText = document.getElementById("status-text");
+
+    // Mostra loading
+    statusDiv.style.display = "flex";
+    spinner.style.display = "block";
+    statusText.textContent = "Enviando...";
+
+    emailjs.sendForm("service_hwbtf0s", "template_d6jrpva", this)
+        .then(function () {
+            spinner.style.display = "none";
+            statusText.textContent = "✅ Mensagem enviada com sucesso!";
+            document.getElementById("contactForm").reset();
+
+            // Esconde após 4 segundos
+            setTimeout(() => { statusDiv.style.display = "none"; }, 4000);
+        }, function (error) {
+            spinner.style.display = "none";
+            statusText.textContent = "❌ Erro ao enviar. Tente novamente.";
+            console.error("Erro:", error);
+        });
+});
+
 document.head.appendChild(logoSpinStyle);
 
 console.log('🚀 WebFusion Portfolio Loaded Successfully!');
