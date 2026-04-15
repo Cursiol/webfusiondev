@@ -75,8 +75,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Intersection Observer for animations
 const observerOptions = {
-    threshold: 0.08,
-    rootMargin: '0px 0px 0px 0px'
+    threshold: 0.05,
+    rootMargin: '0px 0px 50px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -101,7 +101,7 @@ const observer = new IntersectionObserver((entries) => {
 const sections = document.querySelectorAll('.section');
 sections.forEach(section => {
     section.style.opacity = '0';
-    section.style.transform = 'translateY(30px)';
+    section.style.transform = 'translateY(20px)';
     section.style.transition = 'opacity 0.45s ease, transform 0.45s ease';
     observer.observe(section);
 });
@@ -110,7 +110,7 @@ sections.forEach(section => {
 const skillCards = document.querySelectorAll('.skill-card');
 skillCards.forEach((card, index) => {
     card.style.opacity = '0';
-    card.style.transform = 'translateY(30px)';
+    card.style.transform = 'translateY(15px)';
     card.style.transition = `opacity 0.4s ease ${index * 0.05}s, transform 0.4s ease ${index * 0.05}s`;
     observer.observe(card);
 });
@@ -119,7 +119,7 @@ skillCards.forEach((card, index) => {
 const valueCards = document.querySelectorAll('.value-card');
 valueCards.forEach((card, index) => {
     card.style.opacity = '0';
-    card.style.transform = 'translateY(30px)';
+    card.style.transform = 'translateY(15px)';
     card.style.transition = `opacity 0.4s ease ${index * 0.05 + 0.05}s, transform 0.4s ease ${index * 0.05 + 0.05}s`;
     observer.observe(card);
 });
@@ -128,8 +128,8 @@ valueCards.forEach((card, index) => {
 const projectCards = document.querySelectorAll('.project-card');
 projectCards.forEach((card, index) => {
     card.style.opacity = '0';
-    card.style.transform = 'translateY(30px)';
-    card.style.transition = `opacity 0.6s ease ${index * 0.1 + 0.2}s, transform 0.6s ease ${index * 0.1 + 0.2}s`;
+    card.style.transform = 'translateY(15px)';
+    card.style.transition = `opacity 0.4s ease ${index * 0.05}s, transform 0.4s ease ${index * 0.05}s`;
     observer.observe(card);
 });
 
@@ -137,8 +137,8 @@ projectCards.forEach((card, index) => {
 const testimonialCards = document.querySelectorAll('.testimonial-card');
 testimonialCards.forEach((card, index) => {
     card.style.opacity = '0';
-    card.style.transform = 'translateY(30px)';
-    card.style.transition = `opacity 0.6s ease ${index * 0.1 + 0.2}s, transform 0.6s ease ${index * 0.1 + 0.2}s`;
+    card.style.transform = 'translateY(15px)';
+    card.style.transition = `opacity 0.4s ease ${index * 0.05}s, transform 0.4s ease ${index * 0.05}s`;
     observer.observe(card);
 });
 
